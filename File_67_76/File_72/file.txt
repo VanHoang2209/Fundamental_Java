@@ -1,0 +1,4 @@
+Hello mình là Văn Hoàng
+Dữ liệu: 3.14 là số PI
+Student{id=7527, name='Nguyễn Văn Hoàng'}
+
