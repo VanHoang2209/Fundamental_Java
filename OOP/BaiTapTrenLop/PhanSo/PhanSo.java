@@ -1,15 +1,13 @@
 package OOP.BaiTapTrenLop.PhanSo;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
-import java.util.UUID;
 
-public class Phan_So {
+public class PhanSo {
     private int tuSo;
     private int mauSo;
-    public Phan_So(){
+    public PhanSo(){
     }
-    public Phan_So(int tuSo, int mauSo){
+    public PhanSo(int tuSo, int mauSo){
         this.tuSo = tuSo;
         this.mauSo = mauSo;
     }
@@ -44,25 +42,25 @@ public class Phan_So {
     public void inPhanSo(){
         System.out.println(this.tuSo + "/" + this.mauSo);
     }
-    public Phan_So Cong2ps(Phan_So ps){
+    public PhanSo Cong2ps(PhanSo ps){
         int tuSoMoi = this.tuSo * ps.mauSo + ps.tuSo * this.mauSo;
         int mauSoMoi = this.mauSo * ps.mauSo;
-        return new Phan_So(tuSoMoi,mauSoMoi);
+        return new PhanSo(tuSoMoi,mauSoMoi);
     }
-    public Phan_So Tru2ps (Phan_So ps){
+    public PhanSo Tru2ps (PhanSo ps){
         int tuSoMoi = this.tuSo * ps.mauSo - ps.tuSo * this.mauSo;
         int mauSoMoi = this.mauSo * ps.mauSo;
-        return new Phan_So(tuSoMoi,mauSoMoi);
+        return new PhanSo(tuSoMoi,mauSoMoi);
     }
-    public Phan_So Nhan2ps (Phan_So ps){
+    public PhanSo Nhan2ps (PhanSo ps){
         int tuSoMoi = this.tuSo * ps.tuSo;
         int mauSoMoi = this.mauSo * ps.mauSo;
-        return new Phan_So(tuSoMoi,mauSoMoi);
+        return new PhanSo(tuSoMoi,mauSoMoi);
     }
-    public Phan_So Chia2ps(Phan_So ps){
+    public PhanSo Chia2ps(PhanSo ps){
         int tuSoMoi = this.tuSo * ps.mauSo;
         int maSoMoi = this.mauSo * ps.tuSo;
-        return new Phan_So(tuSoMoi,maSoMoi);
+        return new PhanSo(tuSoMoi,maSoMoi);
     }
     public void ToiGian2ps(){
         int UCLN = UCLN(this.tuSo,this.mauSo);
@@ -77,8 +75,8 @@ public class Phan_So {
     }
 
     public static void main(String[] args) {
-        Phan_So ps1 = new Phan_So();
-        Phan_So ps2 = new Phan_So();
+        PhanSo ps1 = new PhanSo();
+        PhanSo ps2 = new PhanSo();
         System.out.println("Nhập phân số thứ nhất: ");
         ps1.nhapPhanSo();
         System.out.println("Nhập phân số thứ hai: ");
@@ -87,10 +85,10 @@ public class Phan_So {
         ps2.inPhanSo();
 
 
-        Phan_So cong = ps1.Cong2ps(ps2);
-        Phan_So tru = ps1.Tru2ps(ps2);
-        Phan_So nhan = ps1.Nhan2ps(ps2);
-        Phan_So chia = ps1.Chia2ps(ps2);
+        PhanSo cong = ps1.Cong2ps(ps2);
+        PhanSo tru = ps1.Tru2ps(ps2);
+        PhanSo nhan = ps1.Nhan2ps(ps2);
+        PhanSo chia = ps1.Chia2ps(ps2);
 
         System.out.print("Cộng 2 phân số: ");
         cong.ToiGian2ps();
