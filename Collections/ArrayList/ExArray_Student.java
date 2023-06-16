@@ -32,7 +32,7 @@ class Student {
     }
 }
 public class ExArray_Student {
-    public static void main(String[] args) {
+    public static void gimain(String[] args) {
         ArrayList<Student> st = new ArrayList<Student>();
         Student st1 = new Student("Bac", 17);
         Student st2 = new Student("Nam", 20);

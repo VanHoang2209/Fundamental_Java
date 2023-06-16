@@ -1,4 +1,4 @@
-package OOP.BaiTapTrenLop.HangHoa;
+package OOP.BaiTapTrenLop.HangHoa_Arraylist;
 
 
 public class HangHoa {
@@ -16,7 +16,7 @@ public class HangHoa {
         this.maHang = "";
         this.tenHang = "";
         this.nhaSanXuat = "";
-        this.gia = 0.0f;
+        this.gia = 0.0d;
     }
 
     public String getMaHang() {
@@ -60,4 +60,5 @@ public class HangHoa {
                 ", gia=" + gia +
                 '}';
     }
+
 }

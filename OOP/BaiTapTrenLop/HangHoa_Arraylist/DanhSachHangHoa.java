@@ -1,8 +1,6 @@
-package OOP.BaiTapTrenLop.HangHoa;
+package OOP.BaiTapTrenLop.HangHoa_Arraylist;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class DanhSachHangHoa {
     ArrayList<HangHoa> list;

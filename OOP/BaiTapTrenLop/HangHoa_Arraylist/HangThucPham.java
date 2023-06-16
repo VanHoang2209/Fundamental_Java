@@ -1,4 +1,4 @@
-package OOP.BaiTapTrenLop.HangHoa;
+package OOP.BaiTapTrenLop.HangHoa_Arraylist;
 
 public class HangThucPham extends HangHoa{
     private String ngaySanXuat;

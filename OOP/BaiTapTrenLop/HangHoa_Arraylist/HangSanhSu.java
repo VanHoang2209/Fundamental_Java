@@ -1,4 +1,4 @@
-package OOP.BaiTapTrenLop.HangHoa;
+package OOP.BaiTapTrenLop.HangHoa_Arraylist;
 
 public class HangSanhSu extends HangHoa {
     private String loaiNguyenLieu;

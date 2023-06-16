@@ -42,5 +42,10 @@ public class Test {
         // DateFormat
         DateFormat df = new SimpleDateFormat("dd-MM-yyyy, HH:mm:ss a");
         System.out.println(df.format(d));
+
+        Date date = new Date();
+        DateFormat df1 = new SimpleDateFormat("dd/MM/yyyy");
+        String dateString = df1.format(date);
+        System.out.println(dateString);
     }
 }
