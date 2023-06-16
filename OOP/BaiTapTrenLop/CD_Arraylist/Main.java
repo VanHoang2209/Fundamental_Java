@@ -45,7 +45,7 @@ public class Main {
                 case 3:
                     System.out.println("Nhập thông tin cho 1 CD: ");
                     CD CDnew = CD.inputCD();
-                    list.add(CDnew); ĐƯỢC SẮP XẾP TĂNG DẦN THEO MACD //");
+                    list.add(CDnew);
                     list.output();
                     break;
                 case 4:
@@ -60,7 +60,7 @@ public class Main {
                     break;
                 case 5:
                     list.sapXepTang();
-                    System.out.println("// DANH SÁCH CD
+                    System.out.println("// DANH SÁCH CD ĐƯỢC SẮP XẾP TĂNG DẦN THEO MACD // ");
                     break;
                 case 6:
                     exit(0);
